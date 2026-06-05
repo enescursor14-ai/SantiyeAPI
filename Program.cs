@@ -177,7 +177,7 @@ app.Lifetime.ApplicationStarted.Register(() =>
 
             // Senaryo A: Uygulama açıldı ama babanın bilgisayarında tarayıcı hiç açılamadı. 
             // Arkada sonsuza kadar açık kalmasın, 15 saniye sonra sistemi kapat.
-            if (sonKalpAtisi == null && (DateTime.Now - sunucuAcilisZamani).TotalSeconds > 15)
+            if (sonKalpAtisi == null && (DateTime.Now - sunucuAcilisZamani).TotalSeconds > 180)
             {
                 app.Lifetime.StopApplication();
                 break;

@@ -4,9 +4,13 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>WinExe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.3">
@@ -20,14 +24,18 @@
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.4" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.4" />
+    <PackageReference Include="System.Management" Version="10.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Configurations/" />
-    <Folder Include="Controllers/" />
     <Folder Include="Data/" />
-    <Folder Include="MiddleWares/" />
+    <Folder Include="Exceptions/" />
+    <Folder Include="Helpers/" />
+    <Folder Include="Mappings/" />
     <Folder Include="Services/" />
+    <Folder Include="Validators/" />
+    <Folder Include="wwwroot/" />
   </ItemGroup>
 
 </Project>

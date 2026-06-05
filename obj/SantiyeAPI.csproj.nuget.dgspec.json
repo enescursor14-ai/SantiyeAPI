@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/muhammedenesbera/Desktop/SantiyeAPI/SantiyeAPI.csproj": {}
+    "/Users/muhammedenesbera/Desktop/santiye/SantiyeAPI/SantiyeAPI.csproj": {}
   },
   "projects": {
-    "/Users/muhammedenesbera/Desktop/SantiyeAPI/SantiyeAPI.csproj": {
+    "/Users/muhammedenesbera/Desktop/santiye/SantiyeAPI/SantiyeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muhammedenesbera/Desktop/SantiyeAPI/SantiyeAPI.csproj",
+        "projectUniqueName": "/Users/muhammedenesbera/Desktop/santiye/SantiyeAPI/SantiyeAPI.csproj",
         "projectName": "SantiyeAPI",
-        "projectPath": "/Users/muhammedenesbera/Desktop/SantiyeAPI/SantiyeAPI.csproj",
+        "projectPath": "/Users/muhammedenesbera/Desktop/santiye/SantiyeAPI/SantiyeAPI.csproj",
         "packagesPath": "/Users/muhammedenesbera/.nuget/packages/",
-        "outputPath": "/Users/muhammedenesbera/Desktop/SantiyeAPI/obj/",
+        "outputPath": "/Users/muhammedenesbera/Desktop/santiye/SantiyeAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/muhammedenesbera/.nuget/NuGet/NuGet.Config"
@@ -20,7 +20,7 @@
           "net10.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "/opt/homebrew/Cellar/dotnet/10.0.105/libexec/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +45,18 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -76,6 +88,10 @@
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[10.1.4, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[10.0.5, )"
             }
           },
           "imports": [
@@ -97,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.105/libexec/sdk/10.0.105/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

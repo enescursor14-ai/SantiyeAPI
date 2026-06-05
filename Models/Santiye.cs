@@ -5,11 +5,21 @@ namespace SantiyeAPI.Models;
 public class Santiye
 {
     public int Id { get; set; }
-        public string Ad { get; set; } = string.Empty;
-        public string Konum { get; set; } = string.Empty;
-        public bool AktifMi { get; set; } = true;
+    public string Ad { get; set; } = string.Empty;
+    public string Konum { get; set; } = string.Empty;
+    public bool AktifMi { get; set; } = true;
+    public bool IsDeleted { get; set; } = false;
 
-        // EF Core Sihri: Bir şantiyenin içinde BİRDEN FAZLA işçi olur.
-        // İleride .Include(s => s.Isciler) dediğimizde bu liste dolacak!
-        public List<Isci> Isciler { get; set; } = new List<Isci>();
+    
+    // 🚀 YENİ EKLENEN LİSANS VE FİRMA ALANLARI
+    public int? CompanyId { get; set; } 
+    public DateTime? LisansBitisTarihi { get; set; }
+    public Company? Company { get; set; }
+
+
+
+
+    public ICollection<SantiyeIsci> SantiyeIsciler { get; set; } = new List<SantiyeIsci>();
+    public ICollection<SantiyeNotu> Notlari { get; set; } = new List<SantiyeNotu>(); 
+
 }
